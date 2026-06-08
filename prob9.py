@@ -1,22 +1,27 @@
-var1 = input("What do you want to find?" )
+import math
+var1 = input("What do you want to find: " )
 
-
-
-if var1 == "v":
-    u = int(input("initial velocity(u)?" ))
-    a = int(input("acceleration (a)?" ))
-    t = input("time (t)?, Type nil if unkown" )
-    s = input("distance (s)?, Type nil if unkown")
+if var1 == "v" or "Final velocity" :
+    u = int(input("initial velocity(u): " ))
+    a = int(input("acceleration (a): " ))
+    t = input("time (t)?, Type nil if unkown: " )
+    s = input("distance (s)?, Type nil if unkown: ")
     
     if s == "nil":
         ti = int(t)
         v = u + a * ti
-        print("Final velocity (v) is", v)
+        if var1 == "v":
+            print("Final velocity (v) is", v)
     
     if s != "nil":
         d = int(s)
-        v ** 2 - u ** 2 == 2 * a * d 
+        v = math.sqrt(2*a*d + u**2) 
         print("Final velocity (v) is", v)
+
+if var1 == "s" or "distance" :
+    tt = int(t)
+    s = u*tt + (a*(tt**2))/2
+    print("distance moved (s) is", s) 
     
   
     

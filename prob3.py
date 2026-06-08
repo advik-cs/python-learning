@@ -1,8 +1,11 @@
-for a in range(1,100,1):
+for i in range(2,101,1):
+    prime = True
 
-for b in range(2,100,1):
-
-b != a 
-
-if a%b != 0 :
-    print(a) 
+    for j in range(2,i,1): 
+        if i%j == 0:
+            prime = False
+            
+    if prime == True:
+        print(i)
+    
+     
