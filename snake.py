@@ -135,7 +135,6 @@ for i in range(0,10000,1):
         b -= 20
 
     print("Player 2 is now at: ", b)
-
     if b >= 100:
         print("Player 2 wins")
         break
