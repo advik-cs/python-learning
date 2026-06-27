@@ -3,10 +3,11 @@
 #then print that list and its sum 
 import random
 
-lst = [1,1,1,1,1,1,1,1,1,1]
+lst = []
 for e in range(0,10,1):
-    lst[e] = random.randint(10,50)
+    e = random.randint(10,50)
+    lst.append(e)
     
-x = lst[0] + lst[1] + lst[2] + lst[3] + lst[4] + lst[5] + lst[6] + lst[7] + lst[8] + lst[9]
-
+a,b,c,d,e,f,g,h,i,j = lst
+x = a + b + c + d + e + f + g + h + i + j
 print(lst,", sum:",x)
