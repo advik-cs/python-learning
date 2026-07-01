@@ -1,3 +1,9 @@
+#input_str = "Hello world and Hello Earth"
+#print frequency of each word 
+#H - 2 
+#...
+#and so on for other words 
+    
 s = input("Enter your Sentence:")
 s1 = s.split()
 
